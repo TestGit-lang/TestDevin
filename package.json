@@ -1,0 +1,14 @@
+{
+  "name": "testdevin",
+  "version": "1.0.0",
+  "description": "Exercise: Introduction to Devin",
+  "main": "index.js",
+  "scripts": {
+    "test": "python main.py"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "flake8": "^0.0.1"
+  }
+}
