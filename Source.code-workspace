@@ -1,0 +1,35 @@
+{
+    "folders": [
+		{
+			"path": "."
+		}
+	],
+    "settings": {
+        "terminal.integrated.shellArgs.windows": [
+            "-NoExit",
+            "chcp",
+            "65001"
+        ],
+        "editor.renderWhitespace": "boundary",
+        "files.autoGuessEncoding": true,
+        // autopepとflake8有効化にはCtrl+Shift+@でターミナルを開き
+        // `pip install autopep8`と`pip install flake8`を実行する
+        "files.autoSave": "afterDelay",
+        "files.autoSaveDelay": 1000,
+        "python.linting.lintOnSave": true,
+        "python.linting.pylintEnabled": false,
+        "python.linting.pycodestyleEnabled": false,
+        "python.linting.flake8Enabled": true,
+        "python.linting.flake8Args": [
+            "--ignore=W293, W504",
+            "--max-complexity=20"
+        ],
+        "python.formatting.provider": "autopep8",
+        "python.formatting.autopep8Args": [
+            "--aggressive", "--aggressive",
+        ],
+        "autoDocstring.docstringFormat": "numpy",
+        "autoDocstring.quoteStyle": "'''",
+        "autoDocstring.startOnNewLine": true,
+    }
+}
